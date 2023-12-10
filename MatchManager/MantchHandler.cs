@@ -7,15 +7,9 @@ using Matches;
 
 namespace MatchManager
 {
-    public enum MatchSteps
-    {
-        Lottery = 0,
-        SetStrategy,
-        Match,
-        SetVitality,
-        WinnerAnnouncement
-    }
-
+    /// <summary>
+    /// This class organizes battles and sets the health and vitality of the participants
+    /// </summary>
     public class MatchHandler
     {
         List<HeroBase> participiants;

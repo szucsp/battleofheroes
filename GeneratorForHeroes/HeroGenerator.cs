@@ -4,15 +4,23 @@ using Heroes;
 
 namespace GeneratorForHeroes
 {
+    /// <summary>
+    /// This is an generator class for heroes.
+    /// </summary>
     public class HeroGenerator
     {
-        public List<HeroBase> GetHeros(int n)
+        /// <summary>
+        /// Generates the specified number of heroes and randomly selects their type
+        /// </summary>
+        /// <param name="numberOfHeroes"></param>
+        /// <returns></returns>
+        public List<HeroBase> GetHeros(int numberOfHeroes)
         {
             List<Type> heroTypes = GetHeroTypes();
             List<HeroBase> heros = new List<HeroBase>();
             var random = new Random();
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 1; i <= numberOfHeroes; i++)
             {
                 var heroType = heroTypes[random.Next(heroTypes.Count)];
 

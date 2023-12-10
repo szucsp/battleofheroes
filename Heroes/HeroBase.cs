@@ -1,5 +1,8 @@
 ﻿namespace Heroes
 {
+    /// <summary>
+    /// This is an abstract class for Heroes. 
+    /// </summary>
     public abstract class HeroBase
     {
         private const double diedlimit = 0.25;
