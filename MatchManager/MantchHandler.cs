@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using Heroes;
 using Matches;
@@ -18,6 +19,7 @@ namespace MatchManager
     public class MatchHandler
     {
         List<HeroBase> participiants;
+        public event PropertyChangedEventHandler NewMessage;
 
         Dictionary<string, MatchStrategy> strategies = new Dictionary<string, MatchStrategy>()
         {
@@ -36,10 +38,12 @@ namespace MatchManager
         {
             Match match = new Match();
 
-            int i = 0;
+            int circle = 0;
 
             while (participiants.Where(p => p.State == HeroState.Live).Count() > 1)
             {
+                circle++;
+
                 var fighters = Lottery();
 
                 match.Setstrategy(GetStrategy(fighters.assaliant, fighters.defender));
@@ -49,6 +53,17 @@ namespace MatchManager
                 SetVitality(fighters.assaliant, fighters.defender);
 
                 SetState(winner, fighters.assaliant, fighters.defender);
+                OnMessage("--- Circle: " + circle + " ---");
+                OnMessage("Assaliant: " + fighters.assaliant.Id + " " + fighters.assaliant.GetType().Name);
+                OnMessage("Defender: " + fighters.defender.Id + " " + fighters.defender.GetType().Name);
+
+                if (winner != null)
+                    OnMessage("After the battle the winner: " + winner.Id + " " + winner.GetType().Name);
+                else
+                    OnMessage("the match is a draw");
+
+                OnMessage("Assaliant vitality: " + fighters.assaliant.Vitality + " " +  fighters.assaliant.State);
+                OnMessage("Defender vitality: " + fighters.defender.Vitality + " " + fighters.defender.State);
             }
         }
 
@@ -105,6 +120,11 @@ namespace MatchManager
             }
 
             return null;
+        }
+
+        protected void OnMessage(String message)
+        {
+            if (NewMessage != null) NewMessage(this, new PropertyChangedEventArgs(message));
         }
     }
 }

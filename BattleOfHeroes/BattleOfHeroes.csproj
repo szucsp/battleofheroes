@@ -49,5 +49,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeneratorForHeroes\GeneratorForHeroes.csproj">
+      <Project>{038ea58a-056a-4d9f-aa86-6d95c3de367d}</Project>
+      <Name>GeneratorForHeroes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Heroes\Heroes.csproj">
+      <Project>{0397485d-051d-485a-8b2d-e0ab4c72ba54}</Project>
+      <Name>Heroes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MatchManager\MatchManager.csproj">
+      <Project>{ade9a4de-0191-4971-b11c-5e056f21f5f0}</Project>
+      <Name>MatchManager</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
