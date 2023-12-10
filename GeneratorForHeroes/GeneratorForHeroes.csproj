@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5F5047E8-10E3-413B-8D65-5F5138845ADE}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>BattleOfHeroes</RootNamespace>
-    <AssemblyName>BattleOfHeroes</AssemblyName>
+    <ProjectGuid>{038EA58A-056A-4D9F-AA86-6D95C3DE367D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeneratorForHeroes</RootNamespace>
+    <AssemblyName>GeneratorForHeroes</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,24 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="HeroGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GeneratorForHeroes\GeneratorForHeroes.csproj">
-      <Project>{038ea58a-056a-4d9f-aa86-6d95c3de367d}</Project>
-      <Name>GeneratorForHeroes</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Heroes\Heroes.csproj">
       <Project>{0397485d-051d-485a-8b2d-e0ab4c72ba54}</Project>
       <Name>Heroes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MatchManager\MatchManager.csproj">
-      <Project>{ade9a4de-0191-4971-b11c-5e056f21f5f0}</Project>
-      <Name>MatchManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
