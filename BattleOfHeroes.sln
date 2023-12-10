@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes", "Heroes\Heroes.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorForHeroes", "GeneratorForHeroes\GeneratorForHeroes.csproj", "{038EA58A-056A-4D9F-AA86-6D95C3DE367D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matches", "Matches\Matches.csproj", "{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{038EA58A-056A-4D9F-AA86-6D95C3DE367D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{038EA58A-056A-4D9F-AA86-6D95C3DE367D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{038EA58A-056A-4D9F-AA86-6D95C3DE367D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
