@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorForHeroes", "Gener
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matches", "Matches\Matches.csproj", "{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchManager", "MatchManager\MatchManager.csproj", "{ADE9A4DE-0191-4971-B11C-5E056F21F5F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBE75B6E-46BA-49B2-A2C9-BDB3A93F69BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE9A4DE-0191-4971-B11C-5E056F21F5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE9A4DE-0191-4971-B11C-5E056F21F5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE9A4DE-0191-4971-B11C-5E056F21F5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE9A4DE-0191-4971-B11C-5E056F21F5F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
