@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Match.cs" />
     <Compile Include="MatchAttribute.cs" />
+    <Compile Include="MatchBetsweenSwordsmanAndRider.cs" />
     <Compile Include="MatchBetweenBowmanAndRider.cs" />
     <Compile Include="MatchBetweenBowmanAndSwordsman.cs" />
     <Compile Include="MatchStrategy.cs" />
