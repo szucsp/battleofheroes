@@ -46,6 +46,7 @@
     <Compile Include="MatchBetsweenSwordsmanAndRider.cs" />
     <Compile Include="MatchBetweenBowmanAndRider.cs" />
     <Compile Include="MatchBetweenBowmanAndSwordsman.cs" />
+    <Compile Include="MatchBetweenSameHeroes.cs" />
     <Compile Include="MatchStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
