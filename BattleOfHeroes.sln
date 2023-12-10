@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleOfHeroes", "BattleOfH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes", "Heroes\Heroes.csproj", "{0397485D-051D-485A-8B2D-E0AB4C72BA54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorForHeroes", "GeneratorForHeroes\GeneratorForHeroes.csproj", "{038EA58A-056A-4D9F-AA86-6D95C3DE367D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0397485D-051D-485A-8B2D-E0AB4C72BA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0397485D-051D-485A-8B2D-E0AB4C72BA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0397485D-051D-485A-8B2D-E0AB4C72BA54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038EA58A-056A-4D9F-AA86-6D95C3DE367D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038EA58A-056A-4D9F-AA86-6D95C3DE367D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038EA58A-056A-4D9F-AA86-6D95C3DE367D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038EA58A-056A-4D9F-AA86-6D95C3DE367D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
