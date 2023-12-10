@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.34031.109
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleOfHeroes", "BattleOfHeroes\BattleOfHeroes.csproj", "{5F5047E8-10E3-413B-8D65-5F5138845ADE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes", "Heroes\Heroes.csproj", "{0397485D-051D-485A-8B2D-E0AB4C72BA54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5F5047E8-10E3-413B-8D65-5F5138845ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F5047E8-10E3-413B-8D65-5F5138845ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F5047E8-10E3-413B-8D65-5F5138845ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0397485D-051D-485A-8B2D-E0AB4C72BA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0397485D-051D-485A-8B2D-E0AB4C72BA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0397485D-051D-485A-8B2D-E0AB4C72BA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0397485D-051D-485A-8B2D-E0AB4C72BA54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
